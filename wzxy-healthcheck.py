@@ -92,14 +92,11 @@ class WoZaiXiaoYuanPuncher:
         cur_time = int(round(time.time() * 1000))
         sign_data = {
             "answers": '["0","1","1"]', # 在此自定义answers字段
-            "latitude": os.environ["WZXY_LATITUDE"],
-            "longitude": os.environ["WZXY_LONGITUDE"],
             "country": os.environ["WZXY_COUNTRY"],
             "city": os.environ["WZXY_CITY"],
             "district": os.environ["WZXY_DISTRICT"],
             "province": os.environ["WZXY_PROVINCE"],
             "township": os.environ["WZXY_TOWNSHIP"],
-            "street": os.environ["WZXY_STREET"],
             "areacode": os.environ["WZXY_AREACODE"],
             "towncode": os.environ["WZXY_TOWNCODE"],
             "citycode": os.environ["WZXY_CITYCODE"],
